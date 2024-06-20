@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #742121;
+  color: #fff;
+  font-size: 24px;
+  white-space: nowrap;
+ padding: 10px ;
+}
+
+.marquee {
+  display:inline-block;
+  animation: slide 5s linear infinite;
+}
+
+.marquee span {
+  padding-left: 50%;
+  display: inline-block;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
